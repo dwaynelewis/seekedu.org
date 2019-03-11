@@ -1,6 +1,3 @@
-
- 
-
 /*---------------------------------------------------------
     Template Name: Español
     Template URI:  http://www.tarikz.co.uk
@@ -36,7 +33,6 @@
       [1. General Styles]
 
 -------------------------------------------*/
-
 
 
 div.footer-newsletter{
@@ -154,8 +150,8 @@ input:-webkit-autofill:focus {
 }
 
 .btn-light {
-    border-color: #FFF;
-    color: #FFF;
+    border-color:black;
+    color:black;
 }
 
 .btn-light:hover {
@@ -533,7 +529,7 @@ section {
 }
 
 .boxed #home.scrolled {
-    width: 100%;
+    width: 92.5%;
 }
 
 .menu-open {
@@ -708,7 +704,6 @@ section {
 
 .background-area.large {
     background-color: #333;
-    background: url(../images/bg/main.jpg);
     height: 800px;
 }
 
@@ -755,10 +750,11 @@ section {
 }
 
 .welcome-text p {
-    color: #FFF;
+    color: black;
     margin: 15px 0;
     font-size: 30px;
     letter-spacing: 10px;
+    font-weight: 700;
 }
 
 .blog .welcome-text p {
@@ -779,14 +775,14 @@ section {
 
 .tarikzsign {
     color: #e6a86a;
-    font-size: 120px;
+    font-size: 90px;
     margin-top: 10px;
     position: relative;
 }
 
 .tarikzsign::after {
     bottom: 50px;
-    content: ".";
+    /* content: "."; */
     color: #000;
     position: absolute;
     right: -30px;
@@ -821,7 +817,7 @@ section {
 #tarikzhero .item .welcome-text {
     left: 50%;
     position: absolute;
-    top: 50%;
+    top: 70%;
     transform: translate(-50%, -50%);
     width: 700px;
 }
@@ -835,7 +831,7 @@ section {
 }
 
 .slide.one {
-    background: url(../images/bg/stembg.JPG) 48% 48%;
+    background: url(../images/bg/community.jpg) 48% 48%;
     background-size: cover;
 }
 
@@ -1203,6 +1199,35 @@ section {
 
 --------------------------------------------*/
 
+.portfolio-items {
+    margin-top: 100px;
+}
+
+.isotope,
+.isotope .isotope-item {
+    /* change duration value to whatever you like */
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -ms-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    -ms-transition-property: height, width;
+    -o-transition-property: height, width;
+    transition-property: height, width;
+}
+
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    -ms-transition-property: -ms-transform, opacity;
+    -o-transition-property: -o-transform, opacity;
+    transition-property: transform, opacity;
+}
 
 
 /**** disabling Isotope CSS3 transitions ****/
@@ -1216,18 +1241,15 @@ section {
     -o-transition-duration: 0s;
     transition-duration: 0s;
 }
-.portfolio-area .title-text {
-    pointer-events: none;
-}
+
 #filters {
+    overflow: hidden;
     list-style: none;
-    /*overflow: hidden;
     width: 10%;
     margin-bottom: 30px;
     padding: 0;
     float: left;
-    text-align: right;*/
-    display: flex;
+    text-align: right;
 }
 
 #filters > li {
@@ -1246,14 +1268,13 @@ section {
     color: #e6a86a;
 }
 
-
-
 .portfolio-container {
-    width: 100%;
+    float: left;
+    width: 90%;
 }
 
 .portfolio-item {
-    padding: 0;
+    padding-bottom: 30px;
 }
 
 .portfolio-item img {
@@ -1267,7 +1288,7 @@ section {
 }
 
 .portfolio-column:hover {
-/*    margin-top: -5px;*/
+    margin-top: -5px;
     -webkit-box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.3);
     box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.3);
@@ -1279,17 +1300,11 @@ section {
 }
 
 .portfolio-content {
-    /*position: absolute;
+    position: absolute;
     z-index: 201;
     top: 30px;
     width: 100%;
-    opacity: 0;*/
-    position: absolute;
-    z-index: 201;
-    top: 50%;
-    width: 100%;
     opacity: 0;
-    margin-top: -40px;
 }
 
 .portfolio-content h4 {
@@ -1298,8 +1313,7 @@ section {
     padding: 0;
     margin: 0;
     margin-top: 30px;
-    /*text-align: left;*/
-    text-align: center;
+    text-align: left;
     padding: 0 30px;
     opacity: 0;
     transition: all 0.6s;
@@ -1318,8 +1332,7 @@ section {
     padding: 0;
     margin: 0;
     margin-top: -30px;
-    /*text-align: left;*/
-    text-align: center;
+    text-align: left;
     padding: 10px 30px;
     opacity: 0;
     transition: all 0.9s;
@@ -1335,8 +1348,7 @@ section {
     height: 1px;
     border: 0;
     background-color: #787878;
-    margin: 20px auto 5px;
-    /*margin: 20px 30px 10px;*/
+    margin: 20px 30px 10px;
     position: relative;
 }
 
@@ -1351,7 +1363,7 @@ section {
 }
 
 .portfolio-column:hover .portfolio-overlay {
-    opacity: 1;
+    opacity: 0.8;
 }
 
 
@@ -2530,16 +2542,6 @@ label {
     }
 }
 
-@media only screen and (max-width: 767px) {
-	.container {
-		padding-left: 15px !important;
-		padding-right: 15px !important;
-	}
-	.portfolio-container .portfolio-item {
-		padding: 0 !important;
-	}
-}
-
 @media only screen and (max-width: 768px) {
     .menu-open,
     .menu-close {
@@ -2606,7 +2608,6 @@ label {
         padding: 140px;
         text-align: center;
         width: 100%;
-        margin-top:175px;
     }
     .about-content {
         margin-top: 100px;
@@ -2678,7 +2679,7 @@ label {
         font-size: 50px;
     }
     .welcome-text p {
-        font-size: 12px;
+        font-size: 18px;
         letter-spacing: 5px;
     }
     .portfolio-container .portfolio-item {
@@ -2708,11 +2709,9 @@ label {
     .menu-open,
     .menu-close {
         right: 30px;
-        background-color: #CC446C;
     }
     .portfolio-container .portfolio-item {
-        /*padding: 0 15px*/
-		padding: 0px
+        padding: 0 15px
     }
 }
 

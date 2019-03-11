@@ -25,6 +25,10 @@
         <link rel="stylesheet" href="css/owl.carousel.min.css">
         <!-- Include Custom CSS -->
         <link rel="stylesheet" href="css/style.css" media="all" />
+		<!-- plugin css -->
+    	<link rel="stylesheet" href="css/plugin.css">
+		<!-- LoadMore css -->
+    	<link rel="stylesheet" href="css/load-more.css">
         <!-- FAVICON -->
         <link rel="shortcut icon" type="image/x-icon" href="images/fav.ico" />
         <!-- Include font stylesheet -->
@@ -39,27 +43,13 @@
 			<!-- LOAD MORE -->
 			
 			<style>
-			.load-more {
-				display:none;
+			#col-height > .portfolio-container > .portfolio-item {
+				height: 230px;
+				overflow: hidden;
 			}
 
-			#loadMore {
-				padding: 10px;
-				text-align: center;
-				background-color: #33739E;
-				color: #fff;
-				border-width: 0 1px 1px 0;
-				border-style: solid;
-				border-color: #fff;
-				box-shadow: 0 1px 1px #ccc;
-				transition: all 600ms ease-in-out;
-				-webkit-transition: all 600ms ease-in-out;
-				-moz-transition: all 600ms ease-in-out;
-				-o-transition: all 600ms ease-in-out;
-			}
-			#loadMore:hover {
-				background-color: #fff;
-				color: #33739E;
+			#col-height > .portfolio-container > .portfolio-item > .portfolio-column {
+				height: 100%;
 			}
 			</style>
 			
@@ -187,201 +177,634 @@
           <!-- Container close--> 
           
           <!-- Portfolio Area -->
-          <section id="portfolio" class="portfolio-area">
-    <div class="container-fluid">
-              <div class="row">
+    <div class="gallery-area section-padding" id="gallery">
         <div class="container">
-                  <div class="row">
-            <div class="title-text">
-                      <h2><span class="title-color">the</span><br />
-                work</h2>
-                      <span class="number">02</span>
-                      <div class="spacer">
-                <div class="line">
-                          <div class="dot"></div>
-                          <div class="dot"></div>
-                          <div class="dot"></div>
-                        </div>
-              </div>
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <!-- section title -->
+                    <div class="title text-center">
+                        <h2>our gallery</h2>
+                        <div class="separate"><span class="separate-icon"></span></div>
+                        <p> We love to capture memorable moments of children engaging with our services. Take a tour below.</p>
                     </div>
-          </div>
-                </div>
-        <div class="portfolio-items">
-          <ul id="filters" class="container">
-            <li class="active" data-filter="*">All</li>
-            <li data-filter=".believe">Believe In Me Foundation</li>
-            <li data-filter=".breakthrough">Breakthrough Miami</li>
-            <li data-filter=".chapman">Chapman</li>
-            <li data-filter=".coretta">Coretta Scott King Young Women's Leadership Academy</li>
-            <li data-filter=".handy">Handy</li>
-            <li data-filter=".honey">Honey Shine</li>
-            <li data-filter=".manatee">Manatee Charter</li>
-            <li data-filter=".pal">Miami Beach PAL</li>
-            <li data-filter=".gardens">Miami Gardens Parks and Recreation</li>
-            <li data-filter=".miles">Miles of Smiles Preschool</li>
-            <li data-filter=".seed">SEED School</li>
-            <li data-filter=".urgent">Urgent Inc</li>
-            <!-- <li data-filter=".chapman">Chapman</li> -->
-          </ul>
-                  
-                <div class="portfolio-container row isotope" id="portfolio-container">
-            <!-- WORK 1 START -->
-            		<div class="col-md-3 col-sm-6 col-xs-12 portfolio-item graphic"> 
-						  <!-- <a href="portfolio-single2.html"> -->
-						  <div class="portfolio-column">
-               				 <div class="portfolio-hover ">
-							  <div class="portfolio-content">
-								<h4>STEM</h4>
-								<hr>
-								<p></p>
-							  </div>
-							  <div class="portfolio-overlay"></div>
-							</div>
-							<img src="images/portfolio/stem1.JPG" alt="">
-						</div>
-                      </div>
-                    <!-- WORK 1 END -->
-                    <!-- WORK 2 START -->
-                    <div class="col-md-3 col-sm-6 col-xs-12 portfolio-item web"> 
-					  <!-- <a href="portfolio-single2.html"> -->
-					  <div class="portfolio-column">
-						<div class="portfolio-hover ">
-						  <div class="portfolio-content">
-							<h4>STEM</h4>
-							<hr>
-							<p></p>
-						  </div>
-						  <div class="portfolio-overlay"></div>
-						</div>
-						<img src="images/portfolio/stem2.JPG" alt=""> </div>
-					</div>
-
-                    <!-- WORK 2 END -->
-                    <!-- WORK 3 START -->
-                    <div class="col-md-3 col-sm-6 col-xs-12 portfolio-item web"> 
-					  <!-- <a href="portfolio-single2.html"> -->
-					  <div class="portfolio-column">
-						<div class="portfolio-hover ">
-						  <div class="portfolio-content">
-							<h4>STEM</h4>
-							<hr>
-							<p></p>
-						  </div>
-						  <div class="portfolio-overlay"></div>
-						</div>
-						<img src="images/portfolio/stem3.JPG" alt=""> </div>
-					</div>
-					<!-- WORK 3 END --> 
-					<!-- WORK 4 START -->
-					<div class="col-md-3 col-sm-6 col-xs-12 portfolio-item video"> 
-					  <!-- <a href="portfolio-single2.html"> -->
-					  <div class="portfolio-column">
-						<div class="portfolio-hover ">
-						  <div class="portfolio-content">
-							<h4>STEM</h4>
-							<hr>
-							<p></p>
-						  </div>
-						  <div class="portfolio-overlay"></div>
-						</div>
-						<img src="images/portfolio/stem4.HEIC" alt=""> </div>
-					</div>
-                    <!-- WORK 4 END -->
-                </div>
-			<!-- Next row -->
-                <div class="portfolio-container row isotope">
-                    <!-- WORK 5 START -->
-                    <div class="col-md-3 col-sm-6 col-xs-12 portfolio-item apps loadmore" style="display:none"> 
-					  <!-- <a href="portfolio-single2.html"> -->
-					  <div class="portfolio-column">
-						<div class="portfolio-hover ">
-						  <div class="portfolio-content">
-							<h4>STEM</h4>
-							<hr>
-							<p></p>
-						  </div>
-						  <div class="portfolio-overlay"></div>
-						</div>
-						<img src="images/portfolio/stem5.JPG" alt=""> </div>
-					</div>
-					<!-- WORK 5 END --> 
-					<!-- WORK 6 START -->
-					<div class="col-md-3 col-sm-6 col-xs-12 portfolio-item graphic loadmore" style="display:none"> 
-					  <!-- <a href="portfolio-single2.html"> -->
-					  <div class="portfolio-column">
-						<div class="portfolio-hover ">
-						  <div class="portfolio-content">
-							<h4>STEM</h4>
-							<hr>
-							<p></p>
-						  </div>
-						  <div class="portfolio-overlay"></div>
-						</div>
-						<img src="images/portfolio/stem6.JPG" alt=""> </div>
-					</div>
-					<!-- WORK 6 END --> 
-					<!-- WORK 7 START -->
-					<div class="col-md-3 col-sm-6 col-xs-12 portfolio-item web loadmore" style="display:none"> 
-					  <!-- <a href="portfolio-single2.html"> -->
-					  <div class="portfolio-column">
-						<div class="portfolio-hover ">
-						  <div class="portfolio-content">
-							<h4>STEM</h4>
-							<hr>
-							<p></p>
-						  </div>
-						  <div class="portfolio-overlay"></div>
-						</div>
-						<img src="images/portfolio/stem7.HEIC" alt=""> </div>
-					</div>
-					<!-- WORK 7 END --> 
-					<!-- WORK 8 START -->
-					<div class="col-md-3 col-sm-6 col-xs-12 portfolio-item video loadmore" style="display:none"> 
-					  <!-- <a href="portfolio-single2.html"> -->
-					  <div class="portfolio-column">
-						<div class="portfolio-hover ">
-						  <div class="portfolio-content">
-							<h4>STEM</h4>
-							<hr>
-							<p></p>
-						  </div>
-						  <div class="portfolio-overlay"></div>
-						</div>
-						<img src="images/portfolio/stem8.HEIC" alt=""> </div>
-					</div>
-					<!-- WORK 8 END --> 
-                </div>
-                <div class="portfolio-container isotope">
-                    <!-- WORK 9 START -->
-                    <div class="col-md-3 col-sm-6 col-xs-12 portfolio-item apps loadmore" style="display:none">
-                        <a href="portfolio-single.html">
-                            <div class="portfolio-column">
-                                <div class="portfolio-hover ">
-                                    <div class="portfolio-content">
-
-                                        <h4>PAPER MOCKUP</h4>
-                                        <hr>
-                                        <p>View details.</p>
-                                    </div>
-                                    <div class="portfolio-overlay"></div>
-                                </div>
-                                <img src="images/portfolio/steam.jpg" alt="">
-                            </div>
-                        </a>
-                    </div>
-                    <!-- WORK 9 END -->
-                </div>
-
-                </div>
-      </div>
-            </div>
-
-            <div class="col-md-12 col-sm-12" style="text-align: center;">
-                <div class="call-btn"><br>
-                    <a class="btn btn-lg btn-dark inverted" href="javascript:void(0)" id="loadmore" class="readmore" data-id="1">Load More</a>
                 </div>
             </div>
-  </section>
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Portfolio Menu -->
+                    <div class="iso-nav">
+                        <ul>
+                            <li class="gallery-active hvr-bounce-to-left" data-filter="*">All</li>
+							<li class="hvr-bounce-to-left" data-filter=".believe">Believe In Me Foundation</li>
+							<li class="hvr-bounce-to-left" data-filter=".breakthrough">Breakthrough Miami</li>
+							<li class="hvr-bounce-to-left" data-filter=".chapman">Chapman</li>
+							<li class="hvr-bounce-to-left" data-filter=".coretta">Coretta Scott King Young Women's Leadership Academy</li>
+							<li class="hvr-bounce-to-left" data-filter=".handy">Handy</li>
+							<li class="hvr-bounce-to-left" data-filter=".honey">Honey Shine</li>
+							<li class="hvr-bounce-to-left" data-filter=".manatee">Manatee Charter</li>
+							<li class="hvr-bounce-to-left" data-filter=".pal">Miami Beach PAL</li>
+							<li class="hvr-bounce-to-left" data-filter=".gardens">Miami Gardens Parks and Recreation</li>
+							<li class="hvr-bounce-to-left" data-filter=".miles">Miles of Smiles Preschool</li>
+							<li class="hvr-bounce-to-left" data-filter=".seed">SEED School</li>
+							<li class="hvr-bounce-to-left" data-filter=".urgent">Urgent Inc</li>
+							<!-- <li data-filter=".chapman">Chapman</li> -->
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="iso-content">
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item believe">
+                <img src="images/portfolio/stem.2.PNG" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Community service.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item believe">
+                <img src="images/portfolio/stem1.JPG" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Adopt a Meal with Ronald McDonald’s House Providing meals for families with terminally ill children.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item  believe">
+                <img src="images/portfolio/stem3.JPG" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Young men from the SEED School. Students made LED cards for Mother’s Day.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item charity  chapman">
+                <img src="images/portfolio/stem12.JPG" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Kids from Miami and Broward participated in a game of baseball with the Miami Marlins during the Kids’ Get Hip and Fit Fair.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item chapman">
+                <img src="images/portfolio/stem5.JPG" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Robotics: Students used a VEX robot to make a catapult and competed in a friendly game of corn hole.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item  chapman">
+                <img src="images/portfolio/stem10.HEIC" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Miami Beach Police Athlete League (PAL) partners with S.E.E.K. for Kids’ Get Hip and For Fair</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item handy">
+                <img src="images/portfolio/stem6.JPG" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Feeding the residents at Chapman Partnership</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item handy">
+                <img src="images/portfolio/community.jpg" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Young kids feeding the homeless in Overtown, Florida</h2>
+                </div>
+            </div>
+             <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item handy">
+                <img src="images/portfolio/steam.jpg" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Community service.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item handy">
+                <img src="images/portfolio/comm2.JPG" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Adopt a Meal with Ronald McDonald’s House Providing meals for families with terminally ill children.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item helping">
+                <img src="images/portfolio/comm3.JPG" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Young men from the SEED School. Students made LED cards for Mother’s Day.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item charity">
+                <img src="images/portfolio/comm4.JPG" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Kids from Miami and Broward participated in a game of baseball with the Miami Marlins during the Kids’ Get Hip and Fit Fair.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item helping">
+                <img src="images/portfolio/community.2.PNG" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Robotics: Students used a VEX robot to make a catapult and competed in a friendly game of corn hole.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item charity">
+                <img src="images/portfolio/fair1.JPG" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Miami Beach Police Athlete League (PAL) partners with S.E.E.K. for Kids’ Get Hip and For Fair</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item handy">
+                <img src="images/portfolio/fair2.JPG" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Feeding the residents at Chapman Partnership</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item handy">
+                <img src="images/portfolio/fair13.PNG" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Young kids feeding the homeless in Overtown, Florida</h2>
+                </div>
+            </div>
+             <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item handy">
+                <img src="images/portfolio/community1.JPG" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Community service.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item handy">
+                <img src="images/portfolio/comm2.JPG" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Adopt a Meal with Ronald McDonald’s House Providing meals for families with terminally ill children.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item helping ">
+                <img src="images/portfolio/steam.jpg" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Young men from the SEED School. Students made LED cards for Mother’s Day.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item charity  ">
+                <img src="images/portfolio/stem1.JPG" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Kids from Miami and Broward participated in a game of baseball with the Miami Marlins during the Kids’ Get Hip and Fit Fair.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item helping">
+                <img src="images/portfolio/fair10.PNG" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Robotics: Students used a VEX robot to make a catapult and competed in a friendly game of corn hole.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item charity ">
+                <img src="images/portfolio/comm4.JPG" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Miami Beach Police Athlete League (PAL) partners with S.E.E.K. for Kids’ Get Hip and For Fair</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item handy">
+                <img src="images/portfolio/fair1.JPG" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Feeding the residents at Chapman Partnership</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item handy">
+                <img src="images/portfolio/stem3.JPG" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Young kids feeding the homeless in Overtown, Florida</h2>
+                </div>
+            </div>
+			<!-- Single Portfolio item -->
+            <div class="single-gallery iso-item helping">
+                <img src="images/portfolio/toy1.HEIC" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Robotics: Students used a VEX robot to make a catapult and competed in a friendly game of corn hole.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item charity ">
+                <img src="images/portfolio/toy2.HEIC" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Miami Beach Police Athlete League (PAL) partners with S.E.E.K. for Kids’ Get Hip and For Fair</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item handy">
+                <img src="images/portfolio/comm5.JPG" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Feeding the residents at Chapman Partnership</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item handy">
+                <img src="images/portfolio/stem2.JPG" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Young kids feeding the homeless in Overtown, Florida</h2>
+                </div>
+            </div>
+             <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item handy">
+                <img src="images/portfolio/stem3.JPG" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Community service.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item handy">
+                <img src="images/portfolio/stem6.JPG" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Adopt a Meal with Ronald McDonald’s House Providing meals for families with terminally ill children.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item helping ">
+                <img src="images/portfolio/fair10.PNG" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Young men from the SEED School. Students made LED cards for Mother’s Day.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item charity  ">
+                <img src="images/portfolio/health.2.PNG" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Kids from Miami and Broward participated in a game of baseball with the Miami Marlins during the Kids’ Get Hip and Fit Fair.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item helping">
+                <img src="images/portfolio/fair10.PNG" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Robotics: Students used a VEX robot to make a catapult and competed in a friendly game of corn hole.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item charity ">
+                <img src="images/portfolio/fair12.PNG" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Miami Beach Police Athlete League (PAL) partners with S.E.E.K. for Kids’ Get Hip and For Fair</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item handy">
+                <img src="images/portfolio/fair14.JPG" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Feeding the residents at Chapman Partnership</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item handy">
+                <img src="images/portfolio/comm2.jpg" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Young kids feeding the homeless in Overtown, Florida</h2>
+                </div>
+            </div>
+             <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item handy">
+                <img src="images/portfolio/stem2.JPG" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Community service.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item handy">
+                <img src="images/portfolio/stem3.jpg" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Adopt a Meal with Ronald McDonald’s House Providing meals for families with terminally ill children.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item helping ">
+                <img src="images/portfolio/stem6.jpg" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Young men from the SEED School. Students made LED cards for Mother’s Day.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item charity  ">
+                <img src="images/portfolio/stem5.JPG" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Kids from Miami and Broward participated in a game of baseball with the Miami Marlins during the Kids’ Get Hip and Fit Fair.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item helping">
+                <img src="images/portfolio/comm4.jpg" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Robotics: Students used a VEX robot to make a catapult and competed in a friendly game of corn hole.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item charity ">
+                <img src="images/portfolio/stem4.HEIC" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Miami Beach Police Athlete League (PAL) partners with S.E.E.K. for Kids’ Get Hip and For Fair</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item handy">
+                <img src="images/portfolio/toy2.HEIC" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Feeding the residents at Chapman Partnership</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item handy">
+                <img src="images/portfolio/comm2.jpg" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Young kids feeding the homeless in Overtown, Florida</h2>
+                </div>
+            </div>
+			<!-- Single Portfolio item -->
+            <div class="single-gallery iso-item helping">
+                <img src="images/portfolio/comm4.jpg" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Robotics: Students used a VEX robot to make a catapult and competed in a friendly game of corn hole.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item charity ">
+                <img src="images/portfolio/stem4.HEIC" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Miami Beach Police Athlete League (PAL) partners with S.E.E.K. for Kids’ Get Hip and For Fair</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item manatee">
+                <img src="images/portfolio/toy2.HEIC" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Feeding the residents at Chapman Partnership</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item manatee">
+                <img src="images/portfolio/comm2.jpg" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Young kids feeding the homeless in Overtown, Florida</h2>
+                </div>
+            </div>
+             <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item manatee">
+                <img src="images/portfolio/stem2.JPG" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Community service.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item manatee">
+                <img src="images/portfolio/stem3.jpg" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Adopt a Meal with Ronald McDonald’s House Providing meals for families with terminally ill children.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item helping ">
+                <img src="images/portfolio/stem6.jpg" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Young men from the SEED School. Students made LED cards for Mother’s Day.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item charity  ">
+                <img src="images/portfolio/stem5.JPG" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Kids from Miami and Broward participated in a game of baseball with the Miami Marlins during the Kids’ Get Hip and Fit Fair.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item helping">
+                <img src="images/portfolio/comm4.jpg" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Robotics: Students used a VEX robot to make a catapult and competed in a friendly game of corn hole.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item charity ">
+                <img src="images/portfolio/stem4.HEIC" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Miami Beach Police Athlete League (PAL) partners with S.E.E.K. for Kids’ Get Hip and For Fair</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item manatee">
+                <img src="images/portfolio/toy2.HEIC" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Feeding the residents at Chapman Partnership</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item manatee">
+                <img src="images/portfolio/comm2.jpg" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Young kids feeding the homeless in Overtown, Florida</h2>
+                </div>
+            </div>
+             <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item manatee">
+                <img src="images/portfolio/stem2.JPG" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Community service.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item manatee">
+                <img src="images/portfolio/stem3.jpg" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Adopt a Meal with Ronald McDonald’s House Providing meals for families with terminally ill children.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item helping ">
+                <img src="images/portfolio/stem6.jpg" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Young men from the SEED School. Students made LED cards for Mother’s Day.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item charity  ">
+                <img src="images/portfolio/stem5.JPG" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Kids from Miami and Broward participated in a game of baseball with the Miami Marlins during the Kids’ Get Hip and Fit Fair.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item helping">
+                <img src="images/portfolio/comm4.jpg" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Robotics: Students used a VEX robot to make a catapult and competed in a friendly game of corn hole.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item charity ">
+                <img src="images/portfolio/stem4.HEIC" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Miami Beach Police Athlete League (PAL) partners with S.E.E.K. for Kids’ Get Hip and For Fair</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item manatee">
+                <img src="images/portfolio/toy2.HEIC" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Feeding the residents at Chapman Partnership</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item manatee">
+                <img src="images/portfolio/comm2.jpg" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Young kids feeding the homeless in Overtown, Florida</h2>
+                </div>
+            </div>
+			<!-- Single Portfolio item -->
+            <div class="single-gallery iso-item helping">
+                <img src="images/portfolio/comm4.jpg" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Robotics: Students used a VEX robot to make a catapult and competed in a friendly game of corn hole.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item charity ">
+                <img src="images/portfolio/stem4.HEIC" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Miami Beach Police Athlete League (PAL) partners with S.E.E.K. for Kids’ Get Hip and For Fair</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item manatee">
+                <img src="images/portfolio/toy2.HEIC" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Feeding the residents at Chapman Partnership</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item manatee">
+                <img src="images/portfolio/comm2.jpg" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Young kids feeding the homeless in Overtown, Florida</h2>
+                </div>
+            </div>
+             <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item manatee">
+                <img src="images/portfolio/stem2.JPG" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Community service.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item manatee">
+                <img src="images/portfolio/stem3.jpg" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Adopt a Meal with Ronald McDonald’s House Providing meals for families with terminally ill children.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item helping ">
+                <img src="images/portfolio/stem6.jpg" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Young men from the SEED School. Students made LED cards for Mother’s Day.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item charity  ">
+                <img src="images/portfolio/stem5.JPG" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Kids from Miami and Broward participated in a game of baseball with the Miami Marlins during the Kids’ Get Hip and Fit Fair.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item helping">
+                <img src="images/portfolio/comm4.jpg" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Robotics: Students used a VEX robot to make a catapult and competed in a friendly game of corn hole.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item charity ">
+                <img src="images/portfolio/stem4.HEIC" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Miami Beach Police Athlete League (PAL) partners with S.E.E.K. for Kids’ Get Hip and For Fair</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item manatee">
+                <img src="images/portfolio/toy2.HEIC" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Feeding the residents at Chapman Partnership</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item manatee">
+                <img src="images/portfolio/comm2.jpg" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Young kids feeding the homeless in Overtown, Florida</h2>
+                </div>
+            </div>
+             <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item manatee">
+                <img src="images/portfolio/stem2.JPG" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Community service.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item manatee">
+                <img src="images/portfolio/stem3.jpg" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Adopt a Meal with Ronald McDonald’s House Providing meals for families with terminally ill children.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item helping ">
+                <img src="images/portfolio/stem6.jpg" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Young men from the SEED School. Students made LED cards for Mother’s Day.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item charity  ">
+                <img src="images/portfolio/stem5.JPG" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Kids from Miami and Broward participated in a game of baseball with the Miami Marlins during the Kids’ Get Hip and Fit Fair.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item helping">
+                <img src="images/portfolio/comm4.jpg" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Robotics: Students used a VEX robot to make a catapult and competed in a friendly game of corn hole.</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item charity ">
+                <img src="images/portfolio/stem4.HEIC" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Miami Beach Police Athlete League (PAL) partners with S.E.E.K. for Kids’ Get Hip and For Fair</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item manatee">
+                <img src="images/portfolio/toy2.HEIC" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Feeding the residents at Chapman Partnership</h2>
+                </div>
+            </div>
+            <!-- Single Portfolio item -->
+            <div class="single-gallery iso-item manatee">
+                <img src="images/portfolio/comm2.jpg" alt="">
+                <div class="gallery-lightbox">
+                    <h2>Young kids feeding the homeless in Overtown, Florida</h2>
+                </div>
+            </div>
+        </div>
+    </div>
           <!-- Portfolio Area Ends --> 
           
           <!-- Container Starts-->
@@ -661,6 +1084,9 @@
 <!-- wrap ends --> 
 <!-- JS Files --> 
 <script src="js/jquery.min.js"></script> 
+<!-- plugins js -->
+
+<script src="js/plugins.js"></script>
 <script src="js/bootstrap.min.js"></script> 
 <!-- Include js plugin --> 
 <script src="js/owl.carousel.min.js"></script> 
@@ -704,23 +1130,5 @@
       //]]>
     </script>
 
-<!-- LOAD MORE -->
-<script type="text/javascript">
-        // load more script
-
-        $("#loadmore").click(function () {
-            var id = $(this).data("id");
-
-            // $(this).data('id', id + 1);
-            $(".loadmore").show();
-
-                $("#loadmore").hide();
-            // if ($(".loadmore" + id).data("end") == "end") {
-            //     $("#loadmore").hide();
-            // }
-            // $('html, body').animate({ scrollTop: '+=100px' }, 800);
-        });
-
-    </script>
 </body>
 </html>
