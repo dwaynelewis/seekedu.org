@@ -839,6 +839,17 @@ section {
     background-size: cover;
 }
 
+
+.slide.health {
+    background: url(../images/bg/health.PNG) 48% 48%;
+    background-size: cover;
+}
+
+.slide.community {
+    background: url(../images/bg/community.jpg) 48% 48%;
+    background-size: cover;
+}
+
 .slide.two {
     background: url(../images/slider/slide-3.jpg) 48% 48%;
     background-size: cover;
