@@ -51,10 +51,13 @@
 			#col-height > .portfolio-container > .portfolio-item > .portfolio-column {
 				height: 100%;
 			}
-			</style>
 			
+            
+            #gallery{
+                display:none;
+                    }
 			
-			
+                </style>
         </head>
 
         <body class="boxed">
@@ -178,7 +181,7 @@
           <!-- Container close--> 
           <div class="container" style="margin-bottom: 100px;">
          <h2 style="display: block;">Educational Crisis In Computer Science</h2> 
-  <video 
+  <!-- <video 
   preload="auto"
   autoplay=""
   muted=""
@@ -190,7 +193,13 @@
     src="https://player.vimeo.com/external/324398275.hd.mp4?s=de6c3be048f46395b9eb4be4f67f9312d6360303&profile_id=175"
     type="video/mp4"
   /> 
-</video>
+</video> -->
+
+<video controls>
+        <source src="https://player.vimeo.com/external/324398275.hd.mp4?s=de6c3be048f46395b9eb4be4f67f9312d6360303&profile_id=175" type="video/mp4">
+        <source src="mov_bbb.ogg" type="video/ogg">
+       
+      </video>
 </div>
           
           <!-- Portfolio Area -->
@@ -1146,6 +1155,14 @@
         
       //]]>
     </script>
+
+<script>
+        $(document).ready(function() {
+          $(function(){
+            $("#gallery").delay(4000).fadeIn("slow");        
+            }); 
+        });
+      </script>
 
 </body>
 </html>
