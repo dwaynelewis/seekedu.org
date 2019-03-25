@@ -3,146 +3,144 @@
     ================================ */
 
 .gallery-area {
-    background-color: white;
+  background-color: white;
 }
 
 .gallery-active {
-    background-color: #e6a86a !important;
+  background-color: #e6a86a !important;
 }
 
 .iso-nav {
-    margin-bottom: 40px;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    z-index: 6;
+  margin-bottom: 40px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  z-index: 6;
 }
 
 .iso-nav ul {
-    display: inline-block;
+  display: inline-block;
 }
 
 .iso-nav ul li {
-    background-color: #222222;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    float: left;
-    font-weight: 300;
-    letter-spacing: 0;
-    list-style: outside none none;
-    padding: 15px 20px;
-    text-transform: capitalize;
-    transition: all 0.5s ease 0s;
-    font-size: 14px;
+  background-color: #222222;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  font-weight: 300;
+  letter-spacing: 0;
+  list-style: outside none none;
+  padding: 15px 20px;
+  text-transform: capitalize;
+  transition: all 0.5s ease 0s;
+  font-size: 14px;
 }
 
 .single-gallery {
-    float: left;
-    overflow: hidden;
-    position: relative;
-    width: 25%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  width: 25%;
 }
 
 .single-gallery img {
-    height: 100%;
-    width: 100%;
-    transform: scale(1);
-    transition: all 2s ease 0s;
+  height: 100%;
+  width: 100%;
+  transform: scale(1);
+  transition: all 2s ease 0s;
 }
 
-.single-gallery:hover.single-gallery img {
-    transform: scale(1.5);
+.single-gallery:hover.single-gallery img.revealed {
+  transform: scale(1.5);
 }
 
 .gallery-lightbox {
-    background-color: rgba(0, 0, 0, 0.8);
-    bottom: 0;
-    left: 0;
-    opacity: 0;
-    padding: 40px 30px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: all 1s ease 0s;
-    width: 100%;
-    z-index: 6;
+  background-color: rgba(0, 0, 0, 0.8);
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  padding: 40px 30px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 1s ease 0s;
+  width: 100%;
+  z-index: 6;
 }
 
-.single-gallery:hover .gallery-lightbox {
-    opacity: 1;
+.single-gallery:hover img.revealed + .gallery-lightbox {
+  opacity: 1;
 }
 
 .gallery-lightbox a.conscare-btn {
-    left: -80px;
-    padding: 5px 20px;
-    position: relative;
-    transition: all 0.5s ease 0s;
-    margin: 0;
-    line-height: 30px;
+  left: -80px;
+  padding: 5px 20px;
+  position: relative;
+  transition: all 0.5s ease 0s;
+  margin: 0;
+  line-height: 30px;
 }
 
 .single-gallery:hover .gallery-lightbox a.conscare-btn {
-    left: 0;
+  left: 0;
 }
 
 .gallery-lightbox a i.fa {
-    bottom: 20px;
-    color: #e6a86a;
-    cursor: pointer;
-    font-size: 22px;
-    position: absolute;
-    right: 20px;
+  bottom: 20px;
+  color: #e6a86a;
+  cursor: pointer;
+  font-size: 22px;
+  position: absolute;
+  right: 20px;
 }
 
 .gallery-lightbox h2 {
-    color: #fff;
-    font-size: 22px;
-    left: -100px;
-    margin-bottom: 15px;
-    position: relative;
-    transition: all 1s ease 0s;
-    text-transform: capitalize;
+  color: #fff;
+  font-size: 22px;
+  left: -100px;
+  margin-bottom: 15px;
+  position: relative;
+  transition: all 1s ease 0s;
+  text-transform: capitalize;
 }
 
 .single-gallery:hover .gallery-lightbox h2 {
-    left: 0;
+  left: 0;
 }
 
 .gallery-area button#load-more {
-    margin: 40px auto 0!important;
-    text-align: center;
-    display: block;
+  margin: 40px auto 0 !important;
+  text-align: center;
+  display: block;
 }
 
-
 .portfolio-items {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 .isotope,
 .isotope .isotope-item {
-    /* change duration value to whatever you like */
-    -webkit-transition-duration: 0.8s;
-    -moz-transition-duration: 0.8s;
-    -ms-transition-duration: 0.8s;
-    -o-transition-duration: 0.8s;
-    transition-duration: 0.8s;
+  /* change duration value to whatever you like */
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -ms-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
 }
 
 .isotope {
-    -webkit-transition-property: height, width;
-    -moz-transition-property: height, width;
-    -ms-transition-property: height, width;
-    -o-transition-property: height, width;
-    transition-property: height, width;
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  -ms-transition-property: height, width;
+  -o-transition-property: height, width;
+  transition-property: height, width;
 }
 
 .isotope .isotope-item {
-    -webkit-transition-property: -webkit-transform, opacity;
-    -moz-transition-property: -moz-transform, opacity;
-    -ms-transition-property: -ms-transform, opacity;
-    -o-transition-property: -o-transform, opacity;
-    transition-property: transform, opacity;
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  -ms-transition-property: -ms-transform, opacity;
+  -o-transition-property: -o-transform, opacity;
+  transition-property: transform, opacity;
 }
-
