@@ -15,7 +15,6 @@
 
     //** LAZY LOAD GALLERY IMAGES */
     var isoTimeOut;
-    var loadingImageCount = 0;
     onLazyImageLoaded = function(el) {
       if (isoTimeOut) {
         clearTimeout(isoTimeOut);
@@ -31,11 +30,12 @@
       }
       clearTimeout(isoTimeOut);
     }
-
-    var myLazyLoad = new LazyLoad({
-      elements_selector: "#pics img",
-      callback_loaded: onLazyImageLoaded
-    });
+    if (this.LazyLoad) {
+      var myLazyLoad = new LazyLoad({
+        elements_selector: "#pics img",
+        callback_loaded: onLazyImageLoaded
+      });
+    }
 
     $tarikzhero.owlCarousel({
       nav: true,
@@ -278,7 +278,9 @@
     var counter = initShow; //counter for load more button
     var iso = $containergal.data("isotope"); // get Isotope instance
 
-    loadMore(initShow); //execute function onload
+    if (iso) {
+      loadMore(initShow); //execute function onload
+    }
 
     function loadMore(toShow) {
       $containergal.find(".hidden").removeClass("hidden");
