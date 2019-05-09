@@ -1,29 +1,23 @@
 @media all and (min-width: 768px) {
-    
-
-    .etl{
-        color: black;
-        text-shadow: .5px .5px white;
-        margin-top:120px;
-        }
-
+  .etl {
+    color: white;
+    /* text-shadow: .5px .5px white; */
+    margin-top: 120px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
+  .captions {
+    display: block;
+  }
 
-        .captions{
-            display: block;
-        }
-
-.background-area.large {
-    
+  .background-area.large {
     /* background-color: #333; */
     background: url(../images/bg/mobile-main.JPG);
     height: 800px;
-    }
-   
+  }
 }
-.ftr{
-    background: url(../images/bg/footer.jpg);
-    height: 800px;
+.ftr {
+  background: url(../images/bg/footer.jpg);
+  height: 800px;
 }
