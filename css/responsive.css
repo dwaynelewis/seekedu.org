@@ -18,6 +18,11 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
       url(../images/bg/mobile-main.JPG);
   }
+
+  .slide.one {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(../images/bg/IMG_2918.JPG);
+  }
 }
 .ftr {
   background: url(../images/bg/footer.jpg);
