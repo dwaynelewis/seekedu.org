@@ -826,8 +826,13 @@ section {
 }
 
 .slide.one {
-  background: url(../images/bg/stembg.JPG) 48% 48%;
+  /* background: url(../images/bg/stembg.JPG) 48% 48%; */
   background-size: cover;
+  background-color: #333;
+  /* background: url(../images/bg/main.jpg); */
+  height: 800px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/bg/stembg.JPG);
 }
 
 .slide.health {
@@ -1214,7 +1219,6 @@ section {
   opacity: 0.5;
   background: #000;
 }
-
 
 /**** disabling Isotope CSS3 transitions ****/
 
