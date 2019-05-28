@@ -19,6 +19,14 @@
       url(../images/bg/mobile-main.JPG);
   }
 
+  .background-area.large.code {
+    /* background-color: #333; */
+    /* background: url(../images/bg/mobile-main.JPG); */
+    height: 800px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(../images/bg/code_mob.jpg);
+  }
+
   .slide.one {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
       url(../images/bg/IMG_2918.JPG);

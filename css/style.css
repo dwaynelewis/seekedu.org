@@ -691,7 +691,7 @@ section {
 }
 
 .background-area.small {
-  background-color: #333; 
+  background-color: #333;
   height: 100px;
 }
 
@@ -701,6 +701,14 @@ section {
   height: 800px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(../images/bg/main.jpg);
+}
+
+.background-area.large.code {
+  background-color: #333;
+  /* background: url(../images/bg/main.jpg); */
+  height: 800px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/bg/code_desk.jpg);
 }
 
 .background-area.large .title-text {
