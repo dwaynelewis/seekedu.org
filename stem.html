@@ -288,6 +288,39 @@
         </video>
       </div>
 
+            <!-- Stats Area -->
+
+            <div id="counters" style="margin-bottom: 100px;">
+              <div class="counter">
+                <div class="count counter-text">3500</div>
+                <p class="desp">
+                  Youth serviced in STEM.
+                </p>
+              </div>
+              <div class="counter">
+                <div class="count counter-text">85</div>
+                <p class="desp">
+                 percent of our youth showed learning gains in STEM and other academic subjects.
+                </p>
+              </div>
+      
+              <div class="counter">
+                <div class="count counter-text">90</div>
+                <p class="desp">
+                  percent attendance for our program.
+                </p>
+              </div>
+      
+              <div class="counter">
+                <div class="count counter-text">511</div>
+                <p class="desp">
+                  Completed STEM Projects.
+                </p>
+              </div>
+          </div>
+
+          <!-- Stats Area -->
+
       <!-- Portfolio Area -->
       <div class="gallery-area section-padding" id="gallery">
         <div class="container">
@@ -1479,5 +1512,23 @@
 
       //]]>
     </script>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script>
+
+$(document).ready(function() {
+    $('.count').each(function() {
+        $(this).prop('Counter', 0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 7000,
+            easing: 'swing',
+            step: function(now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
+});
+</script>
   </body>
 </html>

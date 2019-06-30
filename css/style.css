@@ -33,6 +33,33 @@
 
 -------------------------------------------*/
 
+#counters {
+  margin: 0 10%;
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#counters > div {
+  width: 24%;
+}
+
+.counter-text {
+  font-size: 70px;
+  font-weight: bold;
+  color: orange;
+  text-align: center;
+}
+
+.desp {
+  padding: 10px;
+  text-align: center;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-family: Arial;
+  font-size: 15px;
+}
+
 div.footer-newsletter {
   min-width: 200px;
 }
