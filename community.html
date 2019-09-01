@@ -32,12 +32,12 @@
     <link rel="stylesheet" href="css/simple-line-icons.css" media="all" />
     <link rel="stylesheet" href="css/font-awesome.min.css" media="all" />
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <!-- Include Custom CSS -->
-    <link rel="stylesheet" href="css/style.css" media="all" />
     <!-- plugin css -->
     <link rel="stylesheet" href="css/plugin.css" />
     <!-- LoadMore css -->
     <link rel="stylesheet" href="css/load-more.css" />
+    <!-- Include Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" media="all" />
     <!-- FAVICON -->
     <link rel="shortcut icon" type="image/x-icon" href="images/fav.ico" />
     <!-- Include font stylesheet -->
@@ -61,11 +61,12 @@
 
       #col-height > .portfolio-container > .portfolio-item > .portfolio-column {
         height: 100%;
+        
       }
     </style>
   </head>
 
-  <body class="boxed">
+  <body>
     <!-- Preloader Starts -->
     <div class="preloader">
       <div class="anim animated infinite pulse">
@@ -74,7 +75,7 @@
     </div>
     <div class="preloader-top"></div>
     <!-- Preloader Ends -->
-    <div class="contact-menu">
+<!--    <div class="contact-menu">
       <ul class="pull-left">
         <li><a href="#">privacy policy</a></li>
         <li><a href="#">contact</a></li>
@@ -96,7 +97,7 @@
           ></a>
         </li>
       </ul>
-    </div>
+    </div> -->
     <!-- Wrap Starts -->
     <div id="wrap">
       <!-- wrap start -->
@@ -134,14 +135,36 @@
           <div class="item">
             <div class="slide community"></div>
             <div class="welcome-text">
+              <br><br><br><br><br><br>
               <h1><span class="tarikzsign">Community</span></h1>
-              <!-- <p>Serving Dade county since 2012  </p> -->
-              <!-- <a class="btn btn-lg btn-light">Volunteer Now <i class="fa fa-angle-right"></i></a> -->
-              <a class="btn btn-lg btn-light"
+              <!--  <p>Serving Dade county since 2012  </p> -->
+              <!-- <a class="btn btn-lg btn-light">Volunteer Now <i class="fa fa-angle-right"></i></a> 
+              <a class="btn btn-lg btn-dark"
                 >Donate Today <i class="fa fa-angle-right"></i
-              ></a>
-            </div>
-          </div>
+              ></a>   -->
+              <br>
+              <form
+                    action="https://www.paypal.com/cgi-bin/webscr"
+                    method="post"
+                    target="_top"
+                  >
+                    <input type="hidden" name="cmd" value="_s-xclick" />
+                    <input
+                      type="hidden"
+                      name="hosted_button_id"
+                      value="ZYH9YK9X2KA6C"
+                    />
+                    <input
+                      type="image"
+                      src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+                      border="0"
+                      name="submit"
+                      alt="PayPal - The safer, easier way to pay online!"
+                    />
+                        
+              </form>
+      
+              </div> <!-- "welcome-text -->
           <!-- <div class="item">
                     <div class="slide two"></div>
                     <div class="welcome-text">
