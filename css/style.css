@@ -128,6 +128,20 @@ input:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0px 1000px white inset !important;
 }
 
+/*custom css by JB*/
+input[type=submit] {
+  background-color: #e6a86a;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #fff;
+  font-size:16px;
+  font-weight: regular;
+  line-height: 1.0;
+  padding: 10px;
+  width: 100px
+}
+
 /* btn start */
 
 .btn {

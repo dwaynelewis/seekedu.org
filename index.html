@@ -73,10 +73,9 @@
     <!-- FAVICON -->
     <link rel="shortcut icon" type="image/x-icon" href="images/fav.ico" />
     <!-- Include font stylesheet -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Catamaran:400,500,700,800"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:400,500,700,800" rel="stylesheet"/>
+    <!--mailchimp-->
+    <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
     <link rel="icon" type="images/logo_icon-2.ico" href="images/logo_icon-2.ico"/>
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -514,19 +513,22 @@
                   don't spam!
                 </p>
                 <div class="footer-newsletter">
-                  <form name="newsletter" class="subscribe" method="post">
+                  <form action="https://seekedu.us7.list-manage.com/subscribe/post?u=4a4fb7f891c9c03babab8d7d8&amp;id=75dff26d97" class="subscribe" name="mc-embedded-subscribe-form" method="post" target="_blank" novalidate>
                     <div class="inline-form">
                       <div class="input-group">
                         <input
                           placeholder="Your Email"
+                          value=""
+                          name="EMAIL"
                           class="form-control"
-                          type="text"
+                          type="email"
+                          style="width: 250px"
                         />
-                        <span class="input-group-btn">
-                          <button type="button" class="btn btn-subscribe">
-                            <i class="fa fa-envelope"></i>
-                          </button>
-                        </span>
+                      </div>
+                      <div style="margin-bottom: 15px">
+                        
+                        <input type="submit" value="Subscribe"/>
+                        
                       </div>
                     </div>
                   </form>
