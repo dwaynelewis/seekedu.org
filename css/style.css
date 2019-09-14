@@ -142,6 +142,21 @@ input[type=submit] {
   width: 100px
 }
 
+.center-text-on-img{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.center-text-on-img h1{
+  text-transform: none;
+  color: whitesmoke;
+  font-size: 32px
+}
+.center-text-on-img p{
+  color: whitesmoke;
+  font-size: 20px
+}
 /* btn start */
 
 .btn {
