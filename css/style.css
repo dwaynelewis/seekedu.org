@@ -141,7 +141,6 @@ input[type=submit] {
   padding: 10px;
   width: 100px
 }
-
 .center-text-on-img{
   position: absolute;
   top: 80%;
@@ -157,6 +156,15 @@ input[type=submit] {
   color: whitesmoke;
   font-size: 20px
 }
+/*from old_seek */
+.sidebar-widget:first-child {
+  margin-top: 50px;
+}
+
+.widget-title {
+  margin-bottom: 20px;
+}
+
 /* btn start */
 
 .btn {
