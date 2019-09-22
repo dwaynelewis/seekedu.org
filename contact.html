@@ -39,6 +39,34 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script src="js/modernizr.js"></script>
+
+    <style>
+      ul.list-style {
+          border: solid 2px  #e6a86a;
+          border-radius: 5px;
+          padding: 0.5em 1em 0.5em 2.3em;
+          position: relative;
+        }
+        
+        ul.list-style li {
+          line-height: 1.5;
+          padding: 0.5em 0;
+          list-style-type: none!important;
+        }
+        
+        ul.list-style li:before {
+          font-family: FontAwesome;
+          content: "\f138";
+          position: absolute;
+          left : 1em;
+          color: #e6a86a;
+        }
+        .volunteers-info {
+          position: relative;
+        }
+        
+    
+    </style>
 </head>
 
 <body>
@@ -101,10 +129,66 @@
         </div>
       </section>
       <!-- Background Area ends -->
+      <!--contact info area-->
+      <section class="volunteers-details-area section-padding ash-bg" style="padding-bottom: 80px;">
+          <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-5">
+                    <div class="mapouter"><div class="gmap_canvas"><iframe width="360" height="270" id="gmap_canvas" src="https://maps.google.com/maps?q=298%20NE%2010th%20St%2C%20Miami%2C%20FL%2033132%2C%20USA&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>Google Maps Generator by <a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{position:relative;text-align:right;height:270px;width:360px;}.gmap_canvas {overflow:hidden;background:none!important;height:270px;width:360px;}</style></div>
+                    <BR/>
+                   
+                    
+                  </div>
+                  <div class="col-md-8 col-sm-7">
+                      <div class="volunteers-info" >
+                          <h2 style="margin-top: 0%">Find Us!</h2>
+                          
+                          <br/>
+                          <i class="fa fa-phone"></i>
+                          <span class="theme-color"> <strong>Call us </strong></span>  +1 305-639-0142
+                          <br/>
+                          <br/>
+                          <aside class="sidebar-widget">
+                              <div class="widget-title">
+                                <h4>HOURS</h4>
+                              </div>
+                              <ul class="list-style">
+                                <li>
+                                    Monday 9:00 AM - 7:00 PM
+                                </li>
+                                <li>
+                                    Tuesday 9:00 AM - 7:00 PM
+                                </li>
+                                <li>
+                                    Wednesday 9:00 AM - 7:00 PM
+                                </li>
+                                <li>
+                                    Thursday 9:00 AM - 7:00 PM
+                                </li>
+                                <li>
+                                    Friday 9:00 AM - 7:00 PM
+                                </li>
+                                <li>
+                                    Saturday 9:00 AM - 7:00 PM
+                                </li>
+                                <li>
+                                    Sunday 9:00 AM - 7:00 PM
+                                </li>
+
+                              </ul>
+                            </aside>
+                    
+                      </div><!--volunteers-info-->
+                  </div><!--col-md-8 col-sm-7-->
+                  
+            </div><!--row-->
+          </div><!--container-->
+        </section>
+        <!--contact area ends-->
         <!-- Contact Area -->
-        <section class="contact-area">
+        <section style="padding:10px 0 0;">
             <div class="container">
-                <div class="contact_content col-md-8 col-md-offset-2">
+                <div class="contact_content col-md-8 col-md-offset-2" style="padding-top: 30px;">
                     <form id="contactForm" method="POST" data-toggle="validator" class="contact-form shake">
                             <div class="col-md-6">
                                 <div class="group">
