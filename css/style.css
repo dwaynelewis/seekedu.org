@@ -889,6 +889,16 @@ section {
     url(../images/bg/IMG_8610.PNG);
 }
 
+@media only screen and (max-width: 769px) {
+  .slide.one-stem {
+    background-size: cover;
+    background-color: #333;
+    height: 800px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(../images/bg/IMG_3596.JPG);
+  }
+}
+
 .slide.health {
   background: url(../images/bg/health.PNG) 48% 48%;
   background-size: cover;
