@@ -2618,7 +2618,7 @@ label {
     display: block;
     color: #fff;
     cursor: pointer;
-    right: 50px;
+    left: 50px;
     position: fixed;
     z-index: 999999;
   }
@@ -2632,7 +2632,7 @@ label {
     height: 100%;
     overflow-y: scroll;
     position: fixed;
-    right: 0;
+    left: 0;
     top: 0;
     width: 300px;
   }
@@ -2701,8 +2701,8 @@ label {
   }
   .logo-container,
   .menu-container {
-    float: left;
-    width: 50%;
+    float: right;
+    width: 40%;
   }
   .container {
     padding-left: 30px;
