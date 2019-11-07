@@ -2629,6 +2629,7 @@ label {
     left: 50px;
     position: fixed;
     z-index: 999999;
+    line-height: 5em;
   }
   .menu-close {
     display: none;
@@ -2784,6 +2785,7 @@ label {
   }
   .logo {
     margin-left: 0;
+    line-height: 4em;
   }
   .menu-open,
   .menu-close {
