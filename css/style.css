@@ -2773,8 +2773,8 @@ label {
     font-size: 50px;
   }
   .welcome-text p {
-    font-size: 30px; 
-    letter-spacing: 5px;
+    font-size: 14px; 
+    letter-spacing: 3px;
   }
   .portfolio-container .portfolio-item {
     padding: 0 20px;
@@ -2829,7 +2829,7 @@ label {
     font-size: 40px;
   }
   .welcome-text p {
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 3px;
   }
   .writer-info {
@@ -2841,7 +2841,7 @@ label {
 }
 @media only screen and (max-width: 375px) {
   .welcome-text p {
-    font-size: 27px;
+    font-size: 14px;
     letter-spacing: 3px;
     font-weight: bold;
     
