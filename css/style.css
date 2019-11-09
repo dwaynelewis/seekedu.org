@@ -879,7 +879,7 @@ section {
 #tarikzhero .item .welcome-text {
   left: 50%;
   position: absolute;
-  top: 50%;
+  top: 0;
   transform: translate(-50%, -50%);
   width: 700px;
   margin-top: 346px;
@@ -2844,7 +2844,7 @@ label {
     font-size: 27px;
     letter-spacing: 3px;
     font-weight: bold;
-    margin-top: 1000px;
+    
   }
   .welcome-text-about p {
     font-size: 27px;
@@ -2852,4 +2852,5 @@ label {
     font-weight: bold;
     margin-top: 400px;
   }
+  
 }
