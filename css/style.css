@@ -173,6 +173,14 @@ input[type="submit"] {
   transform: -moz-translate(-50%, -50%);
   transform: -ms-translate(-50%, -50%);
 }
+.center-welcome-text{
+  font-size: 30px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 /* btn start */
 
 .btn {
@@ -776,6 +784,11 @@ section {
   margin-top: 50px;
   text-align: center;
   width: 100%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .blog .welcome-text {
@@ -2760,7 +2773,7 @@ label {
     font-size: 50px;
   }
   .welcome-text p {
-    font-size: 12px; 
+    font-size: 30px; 
     letter-spacing: 5px;
   }
   .portfolio-container .portfolio-item {
