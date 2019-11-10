@@ -2760,6 +2760,9 @@ label {
   .contact_content .contact-form {
     margin-top: 70px;
   }
+  .service-box{
+    margin-top: 180px;
+  }
 }
 
 @media only screen and (max-width: 667px) {
