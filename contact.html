@@ -377,14 +377,14 @@
     //<![CDATA[
     $(function () {
       $('#contactForm').on('submit',function (e) {
-        // prevent the page from refreshing on submit
+        // prevent the page from refreshing on submit 
         e.preventDefault();
 
         // serialize form data to send to 'send' API
         var formData = $('#contactForm').serialize();
         console.log("formData submitted: ", formData);
 
-        // send serialized form data to 'send' API endpoint
+        // send serialized form data to 'send' API endpoint    
         $.ajax({
           type: 'POST',
           url: 'https://shielded-beach-77929.herokuapp.com/api/send',
