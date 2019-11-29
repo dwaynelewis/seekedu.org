@@ -2858,7 +2858,7 @@ label {
 }
 @media only screen and (max-width: 375px) {
   .welcome-text p {
-    font-size: 14px;
+    font-size: 32px;
     letter-spacing: 3px;
     font-weight: bold;
     
