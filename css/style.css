@@ -762,6 +762,13 @@ section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(../images/volunteer/tag-team-volunteer.jpeg);
 }
+.background-area.large-coding {
+  background-color: #333;
+  /* background: url(../images/bg/main.jpg); */
+  height: 800px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/bg/code_desk.jpg);
+}
 .background-area.large-about-us {
   background-color: #333;
   /* background: url(../images/bg/main.jpg); */
