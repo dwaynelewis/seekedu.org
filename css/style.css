@@ -769,6 +769,13 @@ section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(../images/bg/code_desk.jpg);
 }
+.background-area.large-stem {
+  background-color: #333;
+  /* background: url(../images/bg/main.jpg); */
+  height: 800px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/bg/IMG_8610.PNG);
+}
 .background-area.large-about-us {
   background-color: #333;
   /* background: url(../images/bg/main.jpg); */
