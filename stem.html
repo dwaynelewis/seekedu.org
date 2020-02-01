@@ -197,10 +197,11 @@
               <div class="col-sm-4">
                 <div class="service-box">
                   <i class="icon-cloud-upload" aria-hidden="true"></i>
-                  <h3>Why is STEM/STEAM education important?</h3>
+                  <!-- <h3>Why is STEM/STEAM education important?</h3> -->
+                  <h3>Why is it important?</h3>
                   <p>
                     STEM education is integrated in our daily life. It is
-                    important because <span id="dots">...</span><span id="more">it allow students to be exposed to various 
+                    important because <span id="dots-1">...</span><span id="more-1">it allow students to be exposed to various 
                     genres in science; promotes technology, innovation and
                     creativity within a world that is constantly changing.
                     Children are able to make connections between school, home,
@@ -208,7 +209,7 @@
                     internationally. Solving and improving worldwide events
                     through science, technology, engineering, and mathematics.</span>
                   </p>
-                  <button onclick="myFunction()" id="myBtn">Read more</button>
+                  <button onclick="myFunction_1()" id="myBtn-1">Read more</button>
                 </div>
               </div>
               <div class="col-sm-4">
@@ -217,14 +218,15 @@
                   <h3>Our Process</h3>
                   <p>
                     Some activities that we have provided to the our partners
-                    are: Robotic clubs, Rover Ruckus TETRIX, VEX EDR, engineer
+                    are: Robotic clubs<span id="dots-2">...</span><span id="more-2">, Rover Ruckus TETRIX, VEX EDR, engineer
                     design process, hydroponics, Rube Goldberg Machine,
                     Leggo-EV3 Mindstorm, Mini sphero, Java Script Block coding,
                     Robotic coding, electrical engineering, simple circuits,
                     parallel circuits, Ohm’s Law, engineer design, making
                     cosmetic items such as: lip balm, candles, lotion, and much
-                    more.
+                    more.</span>
                   </p>
+                  <button onclick="myFunction_2()" id="myBtn-2">Read more</button>
                 </div>
               </div>
             </div>
@@ -2128,6 +2130,7 @@
     <!-- Lazy Load Images plugin-->
     <script src="js/lazyload.min.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/gem-custom.js"></script>
     <script type="text/javascript">
       //<![CDATA[
       $(function() {
@@ -2203,22 +2206,5 @@ $(document).ready(function() {
     });
 });
 </script>
-<script>
-  function myFunction() {
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("myBtn");
-  
-    if (dots.style.display === "none") {
-      dots.style.display = "inline";
-      btnText.innerHTML = "Read more"; 
-      moreText.style.display = "none";
-    } else {
-      dots.style.display = "none";
-      btnText.innerHTML = "Read less"; 
-      moreText.style.display = "inline";
-    }
-  }
-  </script>
   </body>
 </html>
