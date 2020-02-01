@@ -781,6 +781,18 @@ section {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(../images/bg/community_2.jpg);
 }
+.background-area.large-coding {
+  background-color: #333;
+  /* background: url(../images/bg/main.jpg); */
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/bg/code_desk.jpg);
+}
+.background-area.large-health {
+  background-color: #333;
+  /* background: url(../images/bg/main.jpg); */
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/bg/health.PNG);
+}
 .background-area.large-contact {
   background-color: #333;
   /* background: url(../images/bg/main.jpg); */
