@@ -802,7 +802,7 @@ section {
   /* background: url(../images/bg/main.jpg); */
   height: 800px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(../images/bg/stembg.JPG);
+    url(../images/bg/about.JPG);
 }
 
 .background-area.large.code {
