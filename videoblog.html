@@ -63,8 +63,13 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script src="js/modernizr.js"></script>
-    <!-- LOAD MORE -->
+    <!--Video.js-->
+    <link href="https://vjs.zencdn.net/7.7.5/video-js.css" rel="stylesheet" />
 
+    <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+    <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+
+    <!-- LOAD MORE -->
     <style>
       #col-height > .portfolio-container > .portfolio-item {
         height: 230px;
@@ -225,29 +230,30 @@
     type="video/mp4"
   /> 
 </video> -->
-        <button
-          id="video-btn-1"
-          class="video-btn"
-          style="color: teal; border-radius: 12px; margin-top: 25px;"
-        >
-          The Problems created by the lack of STEM education in our schools
-        </button>
-        <button
-          id="video-btn-2"
-          class="video-btn"
-          style="color: teal; border-radius: 12px; margin-top: 25px;"
-        >
-          Tips on getting your child engaged in school
-        </button>
-        <button
-          id="video-btn-3"
-          class="video-btn"
-          style="color: teal; border-radius: 12px; margin-top: 25px;"
-        >
-          Guide to finding STEM ideas for kids
-        </button>
-
-        <video
+        <div style="margin-bottom: 30px;">
+            <button
+              id="video-btn-1"
+              class="video-btn"
+              style="color: teal; border-radius: 12px; margin-top: 25px;"
+            >
+              The Problems created by the lack of STEM education in our schools
+            </button>
+            <button
+              id="video-btn-2"
+              class="video-btn"
+              style="color: teal; border-radius: 12px; margin-top: 25px;"
+            >
+              Tips on getting your child engaged in school
+            </button>
+            <button
+              id="video-btn-3"
+              class="video-btn"
+              style="color: teal; border-radius: 12px; margin-top: 25px;"
+            >
+              Guide to finding STEM ideas for kids
+            </button>
+        </div>
+        <!-- <video
           id="videoPlayer"
           controls
           style="
@@ -259,8 +265,21 @@
           "
         >
           <source id="vidSource" src="seek3min-mp4.mp4" type="video/mp4" />
-          <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
-        </video>
+      
+        </video> -->
+          <video
+            id="my-video"
+            class="video-js vjs-default-skin vjs-16-9 vjs-big-play-centered"
+            data-setup='{"fluid": true}'
+            controls
+            preload="auto"
+            width="640"
+            height="264"
+            poster="./images/video_poster.PNG"
+          >
+            <source src="seek3min-mp4.mp4" type="video/mp4" />
+          </video>
+
       </div>
 
       <!-- Container Starts-->
@@ -715,5 +734,6 @@
         });
       });
     </script>
+    <script src="https://vjs.zencdn.net/7.7.5/video.js"></script>
   </body>
 </html>
