@@ -1,0 +1,19 @@
+.video-background {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;  
+}
+
+div.video-thumbnail {
+    cursor: pointer;
+    width:300px;
+    padding:10px;
+    float:left;
+}
+.button-style{
+    color: teal;
+    border-radius: 12px;
+
+}

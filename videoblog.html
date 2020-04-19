@@ -40,6 +40,7 @@
     <link rel="stylesheet" href="css/style.css" media="all" />
     <link rel="stylesheet" href="css/responsive.css" media="all" />
     <link rel="stylesheet" href="css/gem-custom.css" media="all" />
+    <link rel="stylesheet" href="css/videojs-dynamic.css" media="all">
     <!-- FAVICON -->
     <link rel="shortcut icon" type="image/x-icon" href="images/fav.ico" />
     <!-- Include font stylesheet -->
@@ -65,7 +66,6 @@
     <script src="js/modernizr.js"></script>
     <!--Video.js-->
     <link href="https://vjs.zencdn.net/7.7.5/video-js.css" rel="stylesheet" />
-
     <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
     <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
 
@@ -230,28 +230,28 @@
     type="video/mp4"
   /> 
 </video> -->
-        <div style="margin-bottom: 30px;">
-            <button
-              id="video-btn-1"
-              class="video-btn"
-              style="color: teal; border-radius: 12px; margin-top: 25px;"
-            >
-              The Problems created by the lack of STEM education in our schools
-            </button>
-            <button
-              id="video-btn-2"
-              class="video-btn"
-              style="color: teal; border-radius: 12px; margin-top: 25px;"
-            >
-              Tips on getting your child engaged in school
-            </button>
-            <button
-              id="video-btn-3"
-              class="video-btn"
-              style="color: teal; border-radius: 12px; margin-top: 25px;"
-            >
-              Guide to finding STEM ideas for kids
-            </button>
+        <div id="video-thumbnails">
+          <div class="video-thumbnail" id="video-1" data-video="1">
+              <p>
+                  <button class="button-style">
+                The Problems created by the lack of STEM education in our schools
+              </button>
+              </p>
+          </div>
+          <div class="video-thumbnail" id="video-2" data-video="2">
+              <p>
+                  <button class="button-style">
+                    Tips on getting your child engaged in school
+                    </button>
+              </p>
+          </div>
+          <div class="video-thumbnail" id="video-3" data-video="3">
+              <p>
+                  <button class="button-style">
+                    Guide to finding STEM ideas for kids
+                    </button>
+              </p>
+          </div>
         </div>
         <!-- <video
           id="videoPlayer"
@@ -267,19 +267,12 @@
           <source id="vidSource" src="seek3min-mp4.mp4" type="video/mp4" />
       
         </video> -->
-          <video
-            id="my-video"
-            class="video-js vjs-default-skin vjs-16-9 vjs-big-play-centered"
-            data-setup='{"fluid": true}'
-            controls
-            preload="auto"
-            width="640"
-            height="264"
-            poster="./images/logo.png"
-          >
-            <source src="seek3min-mp4.mp4" type="video/mp4" />
-          </video>
-
+        <div id="video-player">
+          <div class="video-background">
+              
+          </div>
+        
+      </div>
       </div>
 
       <!-- Container Starts-->
@@ -735,5 +728,7 @@
       });
     </script>
     <script src="https://vjs.zencdn.net/7.7.5/video.js"></script>
+    <!--video js custom-->
+    <script type="text/javascript" src="js/videojs-dynamic.js"></script>
   </body>
 </html>
