@@ -203,8 +203,8 @@ input[type="submit"] {
 }
 
 .btn-light:hover {
-  background-color: #fff;
-  color: #222222;
+  background-color: transparent;
+  color: #fff;
 }
 
 .btn-dark {
