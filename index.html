@@ -178,6 +178,15 @@
           <p class="center-welcome-text" style="font-size: 40px;">
             Working To Meet South Florida's Needs
           </p>
+          <a
+          class="btn btn-lg btn-light changeable"
+          href="#"
+          style="position: relative;top: 170px;"
+          target="_blank"
+          border-color="#fff"
+          color="#fff"
+          >Learn More <i class="fa fa-angle-right"></i
+        ></a>
         </div>
       </section>
       <!-- Background Area ends -->
@@ -657,5 +666,15 @@
     <script src="js/contact-form-script.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmsb2nGLuIl04bt7CWJozRMhThvGa3y1w"></script>
     <script src="js/custom.js"></script>
+    <script>
+      var links = document.getElementsByClassName('changeable');
+      function changeColor(e) {
+        e.target.style.color = e.target.style.color ? null : 'white';
+    }
+    for (var i = 0; i < links.length; i++) {
+        links[i].addEventListener('click', changeColor);
+    }
+    
+    </script>
   </body>
 </html>
