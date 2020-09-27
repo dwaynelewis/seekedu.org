@@ -102,6 +102,21 @@
       #more {
         display: none;
       }
+      #col-height > .portfolio-container > .portfolio-item {
+        height: 230px;
+        overflow: hidden;
+      }
+
+      #col-height > .portfolio-container > .portfolio-item > .portfolio-column {
+        height: 100%;
+      }
+
+      #pics img {
+        visibility: hidden;
+      }
+      #percent-symbol:after{
+      content:'%';
+      } 
     </style>
   </head>
 
@@ -276,6 +291,38 @@
         </div>
       </section>
       <!-- Buy Area -->
+
+      <!-- Stats Area -->
+      <div id="counters" style="margin-top: 100px;">
+        <div class="counter">
+          <div class="count counter-text">11500</div>
+          <p class="desp">
+            People served.
+          </p>
+        </div>
+        <div class="counter">
+          <div class="count counter-text" id="percent-symbol">85</div>
+          <p class="desp">
+            Percent of our youth showed learning gains in STEM and other academic subjects.
+          </p>
+        </div>
+
+        <div class="counter">
+          <div class="count counter-text" id="percent-symbol">85</div>
+          <p class="desp">
+            Participation in programs 
+          </p>
+        </div>
+
+        <div class="counter">
+          <div class="count counter-text">635</div>
+          <p class="desp">
+            Projects completed.
+          </p>
+        </div>
+    </div>
+    <!-- Stats Area -->
+
       <!-- Portfolio Area -->
       <section class="call-to-action">
         <div style="margin-bottom: 20px; padding-bottom: 30px;">
@@ -675,5 +722,21 @@
     }
     
     </script>
+    <script>
+
+      $(document).ready(function() {
+          $('.count').each(function() {
+              $(this).prop('Counter', 0).animate({
+                  Counter: $(this).text()
+              }, {
+                  duration: 7000,
+                  easing: 'swing',
+                  step: function(now) {
+                      $(this).text(Math.ceil(now));
+                  }
+              });
+          });
+      });
+      </script>
   </body>
 </html>
