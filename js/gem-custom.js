@@ -28,7 +28,21 @@ function myFunction_2() {
       moreText.style.display = "inline";
     }
   }
+  function myFunction_3() {
+    var dots = document.getElementById("dots-3");
+    var moreText = document.getElementById("more-3");
+    var btnText = document.getElementById("myBtn-3");
   
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more"; 
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less"; 
+      moreText.style.display = "inline";
+    }
+  }
   function myFunction_community1() {
     var dots = document.getElementById("dots-community1");
     var moreText = document.getElementById("more-community1");
