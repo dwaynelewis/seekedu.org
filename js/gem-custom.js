@@ -103,6 +103,21 @@ function myFunction_2() {
       moreText.style.display = "inline";
     }
   }
+  function myFunction_community4() {
+    var dots = document.getElementById("dots-community4");
+    var moreText = document.getElementById("more-community4");
+    var btnText = document.getElementById("myBtn-community4");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more"; 
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less"; 
+      moreText.style.display = "inline";
+    }
+  }
   function myFunction_health1() {
     var dots = document.getElementById("dots-health1");
     var moreText = document.getElementById("more-health1");
