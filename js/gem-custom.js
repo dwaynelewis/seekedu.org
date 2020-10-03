@@ -1,3 +1,18 @@
+function myFunction_0() {
+  var dots = document.getElementById("dots-0");
+  var moreText = document.getElementById("more-0");
+  var btnText = document.getElementById("myBtn-0");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
 function myFunction_1() {
   var dots = document.getElementById("dots-1");
   var moreText = document.getElementById("more-1");
