@@ -568,7 +568,7 @@ section {
 
 #home.scrolled {
   background-color: #333;
-  height: 70px;
+  /* height: 70px; */
   line-height: 70px;
   position: fixed;
   top: 0;
@@ -1503,6 +1503,7 @@ section {
   top: 0;
   z-index: 200;
   opacity: 0;
+  transition: opacity 2s;
 }
 
 .portfolio-column:hover .portfolio-overlay {
@@ -2359,6 +2360,9 @@ label {
 .call-to-action {
   padding-top: 50px;
 }
+.gallery-area {
+  padding: 100px 0;
+}
 
 .call-to-action .heading {
   margin-bottom: 50px;
@@ -2403,11 +2407,11 @@ label {
   background-color: #1f1f1f;
   color: antiquewhite;
   overflow: hidden;
-  padding-bottom: 70px;
+  padding: 70px 0;
 }
 
 .widget {
-  margin: 70px 0 0;
+  margin: 0px;
 }
 
 .widget h3 {
@@ -2849,6 +2853,10 @@ label {
   }
   #tarikztestimonial.v2.owl-theme .owl-dots {
     bottom: 0;
+  }
+
+  .widget-para {
+    margin: 20px 0;
   }
 }
 
