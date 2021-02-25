@@ -1160,6 +1160,19 @@ section {
   text-align: right;
   transform: translateY(-50%);
 }
+.member-content-1 {
+  color: #fff;
+  background-color: #333;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px 20px;
+  position: absolute;
+  top: 50%;
+  left: 450px;
+  width: 300px;
+  z-index: 999;
+  text-align: right;
+  transform: translateY(-50%);
+}
 
 .member-content h4 {
   color: #fff;
@@ -2618,6 +2631,12 @@ label {
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  .member-content-1 {
+    left: 400px;
+  }
+}
+
 @media only screen and (max-width: 960px) {
   #tarikzteam.owl-theme .owl-nav {
     left: 0;
@@ -2642,6 +2661,9 @@ label {
     margin-bottom: 10px;
   }
   .member-content p {
+    display: none;
+  }
+  .member-content-1{
     display: none;
   }
   #tarikztestimonial.v2 .testimonial-content {
