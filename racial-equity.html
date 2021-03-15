@@ -24,7 +24,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>SEEK | Racial Equity Project</title>
   <!-- Stylesheets -->
-  <!-- <link rel="stylesheet" href="css/bootstrap.min.css" media="all" /> -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" media="all" />
   <link rel="stylesheet" href="css/normalize.css" media="all" />
   <link rel="stylesheet" href="css/animate.min.css" media="all" />
   <link rel="stylesheet" href="css/simple-line-icons.css" media="all" />
@@ -165,11 +165,20 @@
       </div>
     </section>
 
-
-    <div style="margin-top: 100px;">
-      <iframe width="100%" height="500" src="https://www.youtube.com/embed/EHdH0XX9YFY?controls=0">
+    <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'" style="text-align:center">
+      <img src="./images/logo.png" style="cursor:pointer; width: 100%; margin-top: 100px; position: relative; padding: 0 50px;"  style="height:400px"/>
+      <img src="./images/play-logo.png" class="play-button-video"/>
+   </div>
+   <div style="display:none; margin-top: 100px;">
+     <iframe width="100%" height="500" src="https://www.youtube.com/embed/EHdH0XX9YFY?autoplay=1">
       </iframe>
-    </div>
+   </div>
+
+
+    <!-- <div style="margin-top: 100px;">
+      <iframe width="100%" style="height: 850px;" src="https://www.youtube.com/embed/EHdH0XX9YFY?autoplay=1">
+      </iframe>
+    </div> -->
 
 
     <!-- Background Area ends -->
@@ -177,7 +186,7 @@
       <!-- About Area -->
       <section id="about" class="about-area">
         <div class="row">
-          <div class="title-text">
+          <div class="title-text" style="max-width: 100%;">
             <span class="number">2021</span>
             <h2>
               <span class="title-color">Racial Equity Project</span><br />
@@ -271,7 +280,7 @@
         </div>
     </section>
     <section class="call-to-action ">
-      <div class="container">
+      <div class="container community-efforts-wrapper">
         <div class="col-sm-7 heading" style="width:90%;">
           <h3><span class="theme-color">Community </span> Efforts :</h3>
           <br />
@@ -288,23 +297,24 @@
           </div>
         </div>
         <div class="row" style="display: flex; justify-content: center;">
-          <div class="col-sm-2 ">
+          <div class="col-sm-12 col-md-2 ">
             <img src="./images/partner-logo-1.png" style=" background-size: cover;" />
           </div>
-          <div class="col-sm-2">
+          <div class="col-sm-12 col-md-2">
             <img src="./images/partner-logo-5.jpeg" style=" background-size: cover;" />
           </div>
-          <div class="col-sm-2">
+          <div class="col-sm-12 col-md-2">
             <img src="./images/partner-logo-4.jpg" style=" background-size: cover;" />
           </div>
-          <div class="col-sm-2">
+          <div class="col-sm-12 col-md-2">
             <img src="./images/partner-logo-2.jpeg" style=" background-size: cover;" />
           </div>
-          <div class="col-sm-2">
+          <div class="col-sm-12 col-md-2">
             <img src="./images/partner-logo-3.jpeg" style=" background-size: cover;" />
           </div>
 
         </div>
+        
 
       </div>
   </div>

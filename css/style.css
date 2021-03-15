@@ -2800,7 +2800,8 @@ label {
   .newsletter h3,
   .newsletter h4,
   .call-to-action .heading h3,
-  .call-to-action .heading h4 {
+  .call-to-action .heading h4, 
+  .community-efforts-wrapper {
     text-align: center;
   }
   .logo-container,
@@ -2942,4 +2943,29 @@ label {
     margin-top: 400px;
   }
   
+}
+
+/* Custom-css for racial-equity */
+.play-button-video{
+  height: 100px; 
+  position: absolute; 
+  z-index: 100; 
+  top: 130%; 
+  cursor: pointer; 
+  left: 50%;
+}
+
+@media only screen and (max-width: 1024px){
+  .play-button-video{
+    top: 115%;
+  }
+}
+@media only screen and (max-width: 376px){
+  .play-button-video{
+    height: 50px;
+    position: absolute;
+    z-index: 100;
+    top: 113%;
+    cursor: pointer;
+  }
 }
