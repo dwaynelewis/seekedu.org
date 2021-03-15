@@ -2947,25 +2947,15 @@ label {
 
 /* Custom-css for racial-equity */
 .play-button-video{
-  height: 100px; 
-  position: absolute; 
-  z-index: 100; 
-  top: 130%; 
-  cursor: pointer; 
-  left: 50%;
-}
-
-@media only screen and (max-width: 1024px){
-  .play-button-video{
-    top: 115%;
-  }
-}
-@media only screen and (max-width: 376px){
-  .play-button-video{
-    height: 50px;
-    position: absolute;
-    z-index: 100;
-    top: 113%;
+  background-color: #e6a86a;
+    border: 0;
+    border-radius: 8px;
     cursor: pointer;
-  }
+    color: #fff;
+    font-size: 16px;
+    font-weight: regular;
+    line-height: 1;
+    padding: 10px;
+    width: 100px;
+    margin-top: 40px;
 }
