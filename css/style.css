@@ -2958,3 +2958,9 @@ label {
     padding: 10px;
     margin-top: 40px;
 }
+
+@media(max-width:375px) {
+  .partner-link-wrapper>div{
+    margin-top: 50px;
+  }
+}
