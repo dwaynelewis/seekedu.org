@@ -2900,6 +2900,9 @@ label {
     /*padding: 0 15px*/
     padding: 0px;
   }
+  .partner-link-wrapper > div{
+    margin: 50px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -2942,7 +2945,7 @@ label {
     font-weight: bold;
     margin-top: 400px;
   }
-  
+ 
 }
 
 /* Custom-css for racial-equity */
@@ -2959,8 +2962,3 @@ label {
     margin-top: 40px;
 }
 
-@media(max-width:375px) {
-  .partner-link-wrapper>div{
-    margin-top: 50px;
-  }
-}
