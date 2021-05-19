@@ -381,7 +381,7 @@ ol li, ul li { margin-bottom: 10px; }
 /*----------------------------------------*/
 /*----- 10 Header -----*/
 /*----------------------------------------*/
-#dtr-header-global { padding: 40px 50px; display: block; }
+#dtr-header-global { padding: 15px 50px; display: block; }
 #dtr-header-global.on-scroll { padding: 20px 50px; box-shadow: 0 2px 15px 0 rgba(0,0,0,.03); z-index: 999; }
 .dtr-header-left { min-width: 110px; /* if long menu - set min-width equal to logo width for actual size logo */ }
 .dtr-header-right { margin-left: 30px; }
@@ -718,3 +718,24 @@ opacity:0
 /*----------------------------------------*/
 /*===== Common transitions =====*/
 .dtr-btn, button, .dtr-btn-styled span, input[type="submit"], input[type="reset"], .dtr-form-btn, .dtr-logo, a:link, select, textarea, input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="number"], input[type="tel"], input[type="search"], #dtr-header-global, .dtr-social a, .dtr-icon-list li, .dtr-servicebox-caption { -webkit-transition: all .3s ease; transition: all .3s ease }
+
+
+
+@media (min-width:1280px) {
+    .header-left-custom{
+        width: 28%;
+    }
+}
+@media (min-width:1024px) {
+    .header-left-custom{
+        width: 20%;
+    }
+}
+@media (max-width:1024px) {
+    .header-left-custom{
+        width: 20%;
+    }
+    .mobile-custom-logo{
+        width: 50%;
+    }
+}
